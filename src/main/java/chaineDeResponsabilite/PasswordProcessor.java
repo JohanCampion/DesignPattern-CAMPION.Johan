@@ -12,6 +12,7 @@ public class PasswordProcessor extends RegisterProcessor  {
         if(registerRequest.password.length() < 5) {
             System.out.println("Votre mot de passe n'est pas assez long");
         } else {
+            System.out.println(" --> Password OK");
             super.canRegister(registerRequest);
         }
     }

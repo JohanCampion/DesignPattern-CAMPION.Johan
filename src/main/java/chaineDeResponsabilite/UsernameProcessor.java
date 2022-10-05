@@ -11,6 +11,7 @@ public class UsernameProcessor extends RegisterProcessor {
         if (registerRequest.username.contains("$")) {
             System.out.println("Nom d'utilisateur invalide");
         } else  {
+            System.out.println(" --> Username OK");
             super.canRegister(registerRequest);
         }
     }

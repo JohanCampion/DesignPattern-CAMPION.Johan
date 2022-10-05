@@ -10,6 +10,7 @@ public class EmailProcessor extends RegisterProcessor {
         if (!registerRequest.email.contains("@")) {
             System.out.println("Votre email est invalide");
         } else {
+            System.out.println(" --> Email OK");
             super.canRegister(registerRequest);
         }
 
